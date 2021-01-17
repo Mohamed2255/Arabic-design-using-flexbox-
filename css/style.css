@@ -1,0 +1,253 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Cairo', sans-serif;
+background-color: #333;
+}
+.text-primary
+{
+    color: #93cb52;
+}
+/*start navbar*/
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    background: rgb(51, 51, 51, 0.7);
+    padding: 12px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+ul
+{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    
+}
+a
+{
+text-decoration: none;
+}
+ul li a{
+    padding:10px;
+    margin: 0 5px;
+    color: #fff;
+}
+
+ul li :hover
+{
+    background-color:#93cb52;
+    border-radius: 5px;
+}
+/*end navbar*/
+/*star header*/
+.showcase
+{
+    height: 100vh;
+    background-image:url(../images/showcase.jpg);
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.showcase .content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 8px 32px;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.4);
+}
+ .slogan
+{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+.lead
+{
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+.btn
+{
+    display: inline-block;
+    color: #fff;
+    background: #93cb52;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover
+{
+    background-color: #74b62e;
+}
+/*star what we do section*/
+.text-center
+{
+text-align: center;
+font-size: 2rem;
+padding: 1rem;
+}
+#what
+{
+    background: #f4f4f4;
+    color: #333;
+}
+.container
+{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+   
+}
+.item
+{
+    background-color: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+ 
+
+}
+.article
+{
+    text-align: center;
+    margin-left: 4rem;
+}
+/*star who section*/
+#who
+{
+    display: flex;
+}
+.who-img
+{
+    flex: 1;
+    background: #333 url(../images/people.jpg) no-repeat center center/cover;
+}
+.who-text
+{
+    flex: 1;
+    color: #fff;
+    padding: 2rem;
+    line-height: 1.7rem;
+}
+
+.who-text p
+{
+   padding-bottom: 1.5rem;
+   padding-top: 1rem;
+}
+.who-text h3
+{
+   padding-bottom: 1.5rem;
+}
+
+.who-text li
+{
+    padding: 0.5rem 0rem;
+    border-bottom: 1px dotted #444;
+    list-style: none;
+}
+#clients
+{
+    background-color: #f4f4f4;
+}
+#clients h2
+{
+    text-align: center;
+    padding: 2rem;
+}
+.clients-img
+{
+    display: flex;
+    justify-content: center;
+}
+.clients-img img
+{
+    display: block;
+    width: 200px;
+    margin: 10px;
+}
+/*star contact section*/
+#contact
+{
+    display: flex;
+}
+.contact-form
+{
+    flex: 1;
+    background-color: #93cb52;
+    color: #fff;
+}
+.contact-form h2,p
+{
+    margin-right: .75rem;   
+}
+#contact .contact-form .form-group {
+    margin: .75rem;
+}
+#contact .contact-form .form-group input{
+    width: 100%;
+    height: 30px;
+}
+#contact .contact-form .form-group textarea{
+    width: 100%;
+    height: 50px;
+}
+.map-img
+{
+    flex: 1;
+    background:#333 url(../images/gmaps.jpg) no-repeat center center/cover;;
+}
+.dark
+{
+    background-color: black;
+    margin: 1rem;
+}
+footer
+{
+    color: #fff;
+}
+footer p
+{
+    font-size: medium;
+}
+/*media query*/
+@media(max-width:768px)
+{
+    .showcase .content
+{
+
+  text-align: center;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;   
+}
+.item
+{
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+.clients-img
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
